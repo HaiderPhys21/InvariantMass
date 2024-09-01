@@ -95,3 +95,13 @@ You can run the models directly from the Jupyter notebook or convert the noteboo
 ```bash
 jupyter nbconvert --to script electroncollision.ipynb
 python electroncollision.py
+
+```
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+By [Syed Haider Ali](https://github.com/HaiderPhys21)
+.
