@@ -1,4 +1,4 @@
-# Predicting Invariant Mass of Dielectron Events Using Deep Learning
+# Predicting Invariant Mass of Dielectron Events Using Deep Learning: A Comparative Study of DNN and CNN Approaches
 
 This project presents a comparative study of using Deep Neural Networks (DNNs) and Convolutional Neural Networks (CNNs) to predict the invariant mass (M) of dielectron events in high-energy physics.
 
