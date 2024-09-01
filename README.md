@@ -72,7 +72,7 @@ The results of the study show a comparison between the predictive accuracy of th
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/HaiderPhys21/dielectron-invariant-mass-prediction.git
+    git clone https://github.com/HaiderPhys21/InvariantMass.git
     cd dielectron-invariant-mass-prediction
     ```
 
