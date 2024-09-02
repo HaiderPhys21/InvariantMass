@@ -1,6 +1,6 @@
 # Predicting Invariant Mass of Dielectron Events Using Deep Learning: A Comparative Study of DNN and CNN Approaches
 
-![image](https://github.com/user-attachments/assets/778029c6-ce07-4ba2-9a0b-7a665e73db91)
+[![image](https://github.com/user-attachments/assets/778029c6-ce07-4ba2-9a0b-7a665e73db91)](https://i.insider.com/55255d6069bedda52e3a96f2?width=1000&format=mp4)
 
 
 
