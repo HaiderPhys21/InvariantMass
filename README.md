@@ -25,9 +25,12 @@ The primary objective of this project is to explore the effectiveness of differe
 
 Invariant mass is a critical quantity in particle physics, defined as the mass of a system of particles that remains constant regardless of the reference frame in which it is measured. For two particles, the invariant mass \(M\) is given by the relation:
 
-\[ M^2 = (E_1 + E_2)^2 - (\mathbf{p}_1 + \mathbf{p}_2)^2 \]
+$$
+M^2 = (E_1 + E_2)^2 - (\mathbf{p}_1 + \mathbf{p}_2)^2
+$$
 
 where \(E_1\) and \(E_2\) are the energies of the two particles, and \(\mathbf{p}_1\) and \(\mathbf{p}_2\) are their respective momentum vectors. This quantity is particularly important in high-energy physics as it allows physicists to identify particles produced in collisions, such as those at the Large Hadron Collider (LHC), by analyzing the decay products of those particles.
+
 
 For instance, when a heavy particle decays into two electrons, the invariant mass of the electron pair can be used to infer the mass of the original particle. This method is essential for discovering new particles and studying the properties of known ones.
 
