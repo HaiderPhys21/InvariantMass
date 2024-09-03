@@ -97,11 +97,11 @@ Two models were developed and trained:
 ### Mathematical Details
 
 - **Loss Function:** Both models were trained using the Mean Squared Error (MSE) loss function, which is defined as:
-$$
-\[
+
+\[$$
 \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
-\]
-$$
+\]$$
+
 where $$\(y_i\)$$ is the true invariant mass and $$\(\hat{y}_i\)$$ is the predicted invariant mass.
 
 - **Optimization:** The models were optimized using the Adam optimizer, which adjusts the learning rate during training to converge more efficiently.
