@@ -98,9 +98,9 @@ Two models were developed and trained:
 
 - **Loss Function:** Both models were trained using the Mean Squared Error (MSE) loss function, which is defined as:
 
-\[$$
+$$
 \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
-\$$]
+$$
 
 where $$\(y_i\)$$ is the true invariant mass and $$\(\hat{y}_i\)$$ is the predicted invariant mass.
 
@@ -149,6 +149,7 @@ The study compared the predictive accuracy of the DNN and CNN models, with key f
   - The DNN model demonstrated superior performance on tabular data, as expected for structured input.
   - The CNN model, while slightly less accurate, provided insights into how spatial relationships in the data could be leveraged, but also revealed potential information loss during data conversion.
 
+<img width="608" alt="image" src="https://github.com/user-attachments/assets/f4617668-9b69-4ff2-9abe-0adf755430e0">
 
 
 - **Interpretation:** 
