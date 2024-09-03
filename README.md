@@ -84,6 +84,9 @@ The project involves several key data processing steps:
      - The third channel included the momentum components $$(\(p_x\)$$, $$\(p_y\)$$, $$\(p_z\)$$).
    - This encoding ensured that the CNN could exploit the spatial relationships between these physical quantities.
 
+![image](https://github.com/user-attachments/assets/3a745217-4560-44ce-a3da-40c9645e9e59)
+
+
 ### Model Development
 
 Two models were developed and trained:
