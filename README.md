@@ -62,22 +62,103 @@ The dataset contains 100,000 simulated dielectron events with the following feat
 
 The target variable is the **invariant mass (M)** of the electron pair.
 
+### Deep Learning Approaches
+
+- **DNN (Deep Neural Network):** A feedforward neural network with multiple layers that processes tabular data directly.
+- **CNN (Convolutional Neural Network):** A neural network particularly effective for image data, applied here by converting tabular data into image representations. The CNN's capability to learn spatial hierarchies within the data makes it a powerful tool for this task, though it introduces challenges in how the data is represented.
+
+## Methodology
+
+### Data Processing
+
+The project involves several key data processing steps:
+
+1. **Feature Extraction:**
+   - The dataset contains multiple features for each electron in an event, including energy $$(\(E\))$$, momentum components $$(\(p_x\)$$, $$\(p_y\)$$, $$\(p_z\))$$, transverse momentum $$(\(p_t\))$$, pseudorapidity $$(\(\eta\))$$, azimuthal angle $$(\(\phi\))$$, and charge $$(\(q\))$$.
+   - These features were normalized to ensure that the network could process them effectively.
+
+2. **Image Encoding:**
+   - For the CNN, the challenge was to convert the tabular data into a 2D image-like format. This was done by mapping the features onto different channels of the image. Specifically:
+     - The first channel encoded the transverse momentum $$(\(p_t\))$$ and energy $$(\(E\))$$.
+     - The second channel represented the spatial information through pseudorapidity $$(\(\eta\))$$ and azimuthal angle $$(\(\phi\))$$.
+     - The third channel included the momentum components $$(\(p_x\)$$, $$\(p_y\)$$, $$\(p_z\)$$).
+   - This encoding ensured that the CNN could exploit the spatial relationships between these physical quantities.
+
+### Model Development
+
+Two models were developed and trained:
+
+1. **Deep Neural Network (DNN):**
+   - The DNN directly processed the normalized tabular data. The architecture included several fully connected layers with ReLU activation functions, followed by a final output layer that predicted the invariant mass.
+
+2. **Convolutional Neural Network (CNN):**
+   - The CNN was designed to process the 2D image representation of the data. The architecture included convolutional layers that captured spatial hierarchies within the data, followed by pooling layers to reduce dimensionality, and fully connected layers leading to the output.
+
+### Mathematical Details
+
+- **Loss Function:** Both models were trained using the Mean Squared Error (MSE) loss function, which is defined as:
+$$
+\[
+\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+\]
+$$
+where $$\(y_i\)$$ is the true invariant mass and $$\(\hat{y}_i\)$$ is the predicted invariant mass.
+
+- **Optimization:** The models were optimized using the Adam optimizer, which adjusts the learning rate during training to converge more efficiently.
+
+### Model Evaluation
+
+The models were evaluated using:
+
+- **Mean Absolute Error (MAE):** Measures the average magnitude of the errors without considering their direction.
+- **R-squared $$(\(R^2\))$$ score:** Indicates the proportion of the variance in the dependent variable that is predictable from the independent variables.
+
+## Dataset
+
+The dataset contains 100,000 simulated dielectron events, each described by the following features for each electron:
+
+- **Energy (E)**
+- **Momentum components (px, py, pz)**
+- **Transverse Momentum (pt)**
+- **Pseudorapidity (η)**
+- **Azimuthal Angle (φ)**
+- **Charge (q)**
+
+The target variable is the **invariant mass (M)** of the electron pair.
+
 ## Model Architectures
 
 ### Deep Neural Network (DNN)
 
-The DNN model is designed to handle tabular data directly, utilizing fully connected layers to predict the invariant mass. It takes the input features as a vector and processes them through multiple layers to output a prediction for the invariant mass.
+- **Input Layer:** Accepts the tabular data directly.
+- **Hidden Layers:** Several fully connected layers with ReLU activations.
+- **Output Layer:** A single neuron outputting the predicted invariant mass.
 
 ### Convolutional Neural Network (CNN)
 
-The CNN model is employed by converting the tabular data into a grid-like image structure, allowing the model to capture spatial relationships within the data. This approach leverages the ability of CNNs to learn hierarchical patterns in data, although it comes with the challenge of ensuring that the spatial structure imposed by the grid aligns with the physical relationships between features.
+- **Input Layer:** Processes the 3-channel image representation of the data.
+- **Convolutional Layers:** Extract features from the image through spatial hierarchies.
+- **Pooling Layers:** Reduce the dimensionality of the feature maps.
+- **Fully Connected Layers:** Integrate the extracted features to output the predicted invariant mass.
 
 ## Results
 
-The results of the study show a comparison between the predictive accuracy of the DNN and CNN models. Key findings include:
+The study compared the predictive accuracy of the DNN and CNN models, with key findings:
 
-- Performance metrics such as Mean Squared Error (MSE), R-squared (R²), and model loss during training and validation.
-- Insights into the suitability of CNNs for tasks traditionally handled by DNNs in particle physics.
+- **Performance Metrics:** 
+  - The DNN model demonstrated superior performance on tabular data, as expected for structured input.
+  - The CNN model, while slightly less accurate, provided insights into how spatial relationships in the data could be leveraged, but also revealed potential information loss during data conversion.
+
+
+
+- **Interpretation:** 
+  - The DNN's performance underscores its suitability for structured data, while the CNN's results suggest that the representation of physical quantities as images must be carefully designed to avoid losing critical information.
+
+## Technologies Used
+
+- **Programming Languages:** Python
+- **Libraries:** TensorFlow, Pandas, NumPy, Matplotlib, scikit-learn
+- **Tools:** Jupyter Notebook
 
 ## Usage
 
@@ -131,3 +212,6 @@ This project is licensed under the [MIT License](LICENSE).
 By [Syed Haider Ali](https://github.com/HaiderPhys21)
 
 ---
+
+
+
