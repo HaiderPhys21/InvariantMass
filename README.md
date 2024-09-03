@@ -100,7 +100,7 @@ Two models were developed and trained:
 
 \[$$
 \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
-\]$$
+\$$]
 
 where $$\(y_i\)$$ is the true invariant mass and $$\(\hat{y}_i\)$$ is the predicted invariant mass.
 
