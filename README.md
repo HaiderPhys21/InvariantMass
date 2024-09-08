@@ -1,4 +1,4 @@
-# Predicting Invariant Mass of Dielectron Events Using Deep Learning: A Comparative Study of DNN and CNN Approaches
+# Information Retention in High Energy Physics Data: A Comparative Study of CNNs vs. DNNs and BDTs
 
 ![image](https://github.com/user-attachments/assets/265a4d3c-a2a0-48a4-b159-b2f818cdbe68)
 
