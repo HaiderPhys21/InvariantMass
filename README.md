@@ -167,7 +167,8 @@ The study compared the predictive accuracy of the DNN and CNN models, with key f
   - The DNN model demonstrated superior performance on tabular data, as expected for structured input.
   - The CNN model, while slightly less accurate, provided insights into how spatial relationships in the data could be leveraged, but also revealed potential information loss during data conversion.
 
-<img width="608" alt="image" src="https://github.com/user-attachments/assets/f4617668-9b69-4ff2-9abe-0adf755430e0">
+<img width="605" alt="image" src="https://github.com/user-attachments/assets/cdf3a9b9-92f9-4c66-a4b3-c67341dd1a10">
+
 
 
 - **Interpretation:** 
