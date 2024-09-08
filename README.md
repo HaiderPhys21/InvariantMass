@@ -87,6 +87,20 @@ The project involves several key data processing steps:
 ![image](https://github.com/user-attachments/assets/3a745217-4560-44ce-a3da-40c9645e9e59)
 
 
+### Hadronic Image Representation of Data
+
+In this updated approach, we tested a different method of encoding the data by representing the hadronic variables \(\Delta \eta\) and \(\Delta \phi\) into 40x40x1 grayscale images. 
+
+#### Methodology:
+
+- For each event, the difference in pseudorapidity (\(\Delta \eta\)) and the difference in azimuthal angle (\(\Delta \phi\)) between two particles are computed.
+- These values are then mapped onto a 2D histogram grid, creating a sparse 40x40 image where a value of 1 is placed at the bin corresponding to the \(\Delta \eta\) and \(\Delta \phi\) pair.
+- The image is normalized and resized to maintain consistency in size (40x40), and finally, stored in grayscale format (1 channel).
+  
+This method aims to capture the geometric relationship between particles in a compact image format, which is then fed into a convolutional neural network (CNN) for training.
+
+
+
 ### Model Development
 
 Two models were developed and trained:
