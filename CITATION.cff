@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "InvariantMass: Deep Learning for Dielectron Invariant Mass Prediction"
+version: "1.0.0"
+date-released: 2024-06-08
+authors:
+  - family-names: Ali
+    given-names: Syed Haider
+    affiliation: National Centre for Physics, Islamabad
+repository-code: https://github.com/HaiderPhys21/InvariantMass
+license: MIT
+keywords:
+  - invariant mass
+  - dielectron
+  - regression
+  - machine learning
+  - deep learning
+  - high-energy physics
